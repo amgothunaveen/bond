@@ -1,0 +1,84 @@
+*{
+    box-sizing: border;
+    margin: 0;
+    padding: 0;
+
+}
+body{
+    font-family: 'Roboto',sans-serif;
+    width: 100%;
+    height: 100vh; 
+    display: flex;
+    align-items:center;
+    justify-content: center;
+    flex-direction: column;
+    background: url('./love image PNG.png');
+    background-size: cover;
+    background-repeat:no-repeat ;
+    background-position: center center;
+}
+
+.container{
+    width: 700px;
+    height: 400px;
+    background-color: #ffffff;
+    border-radius: 15px;
+    box-shadow: 10px 10px 51px 3px rgba(255,253,253,0.71);
+    -webkit-box-shadow: 10px 10px 51px 3px rgba(255,253,253,0.71);
+    -moz-box-shadow: 10px 10px 51px 3px rgba(255,253,253,0.71);
+    text-align: center;
+}
+.input-fields{
+    display: flex;
+    justify-content:space-evenly;
+    flex-direction: row;
+    align-items: center;
+    margin: 50px 0;
+}
+.title{
+    margin: 20px;
+}
+.input-fields.input-one input,
+.input-fields.input-two input{
+    padding: 10px;
+    outline: none;
+    border: 5px;
+    background: #dedede;
+}
+.input-heart{
+    color: rgb(255, 0, 0);
+    animation: heart 4s infinite;
+
+}
+.btn-calculate{
+    padding: 10px;
+    color: white;
+    background: rgb(65, 139, 0);
+    font-size: 18px;
+    outline: none;
+    border: 0;
+    cursor: pointer;
+}
+.result{
+    margin: 20px 0;
+}
+@keyframes heart{
+    0%{
+transform: scale(.5);
+    }
+    25%{
+transform: scale(1);
+    }
+    40%{
+    transform: scale(.7)
+    }
+    50%{
+        transform: scale(1.2);
+    }
+    75%{
+        transform: scale(1);
+    }
+    100%{
+        transform: scale(1.5);
+    }
+}
